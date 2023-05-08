@@ -63,3 +63,15 @@ Components:
 * **Convex optimization problems with noisy data**: SGD is less sensitive to noisy data than batch gradient descent because it updates the parameters more frequently and can avoid getting stuck in local minima.
 
 - Overall, SGD is a powerful optimization algorithm that can be effective for a wide range of machine learning problems. It is particularly well-suited for large datasets, high-dimensional data, non-convex optimization problems, and online learning. However, the hyperparameters of SGD must be carefully tuned to ensure that the algorithm converges to the optimal solution.
+
+### Recommended to not use SGD in the following situations:
+
+* **Small datasets**: SGD can be less effective for small datasets because the updates can be more noisy and have higher variance. In this case, batch gradient descent or even analytical solutions may be more appropriate.
+
+* **Low-dimensional data**: SGD can be less effective for low-dimensional data because the updates can become too noisy. In this case, batch gradient descent or even analytical solutions may be more appropriate.
+
+* **Sensitive to initialization**: If the optimization problem is sensitive to the initialization of the parameters, or if the model has a large number of local minima, SGD may not be the best choice. In this case, more robust optimization algorithms such as Adam or Adagrad may be more appropriate.
+
+* **Need for exact solutions**: If the optimization problem requires an exact solution, SGD may not be the best choice because it only provides an approximate solution. In this case, optimization algorithms such as L-BFGS or conjugate gradient descent may be more appropriate.
+
+* **Non-differentiable objective functions**: If the objective function is non-differentiable, SGD may not be the best choice. In this case, optimization algorithms such as simulated annealing or genetic algorithms may be more appropriate.
