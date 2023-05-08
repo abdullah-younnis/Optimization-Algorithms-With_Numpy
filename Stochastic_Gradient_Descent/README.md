@@ -9,10 +9,9 @@ Components:
     - learning_rate: float, the learning rate of the algorithm
     - n_epochs: int, the number of epochs (iterations over the entire dataset)
     - batch_size: int, the number of samples to use in each mini-batch
-    
-    Returns:
-    - theta: numpy array of shape (n_features,), the learned model parameters
-    - losses: list of length (n_epochs), the training loss at each epoch
+ Returns:
+            - theta: numpy array of shape (n_features,), the learned model parameters
+            - losses: list of length (n_epochs), the training loss at each epoch
 
 
 
