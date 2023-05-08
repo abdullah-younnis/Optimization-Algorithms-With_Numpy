@@ -74,4 +74,10 @@ Components:
 
 * **Non-differentiable objective functions**: If the objective function is non-differentiable, SGD may not be the best choice. In this case, optimization algorithms such as simulated annealing or genetic algorithms may be more appropriate.
 
-- Overall, SGD is a powerful optimization algorithm that can be effective for a wide range of machine learning problems. It is particularly well-suited for large datasets, high-dimensional data, non-convex optimization problems, and online learning. However, the hyperparameters of SGD must be carefully tuned to ensure that the algorithm converges to the optimal solution.
+### Conclusion
+
+The main advantage of SGD is its computational efficiency and ability to handle large datasets. It can also converge faster than batch gradient descent because it updates the model parameters more frequently, which can help the algorithm escape local minima and find the optimal solution more quickly.
+
+However, SGD can also have higher variance in the updates and be more sensitive to the choice of hyperparameters, such as the learning rate. Careful tuning of the hyperparameters is necessary to ensure that the algorithm converges to the optimal solution.
+
+Overall, SGD is a powerful optimization algorithm that can be effective for a wide range of machine learning problems. Its efficiency and convergence speed make it a popular choice for large datasets and complex models, but it requires careful tuning of the hyperparameters to ensure that it converges to the optimal solution.
