@@ -1,4 +1,4 @@
-# Optimization_algorithms_using_numpy
+# Stochastic Gradient Descent
 In this repository I will implement SGD using numpy
 
 ### Stochastic Gradient Descent Components
