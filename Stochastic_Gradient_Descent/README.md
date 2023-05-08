@@ -48,3 +48,18 @@ Components:
 * **Learning rate tuning**: SGD requires careful tuning of the learning rate to ensure that the algorithm converges to the optimal solution. If the learning rate is too high, the algorithm can oscillate and fail to converge. If the learning rate is too low, the algorithm may converge too slowly.
 
 * **Initialization sensitivity**: SGD can be sensitive to the initial values of the parameters, which can affect the convergence speed and final performance of the algorithm.
+
+
+### Recommended to use SGD in the following situations:
+
+* **Large datasets**: SGD is computationally efficient and can handle large datasets because it updates the parameters using only a subset of the training data at each iteration.
+
+* **High-dimensional data**: SGD can handle high-dimensional data because it updates the parameters using only a subset of the features at each iteration.
+
+* **Non-convex optimization problems**: SGD can be effective for non-convex optimization problems because it can escape local minima and find the optimal solution more quickly than batch gradient descent.
+
+* **Online learning**: SGD can be used for online learning because it can update the parameters as new data becomes available.
+
+* **Convex optimization problems with noisy data**: SGD is less sensitive to noisy data than batch gradient descent because it updates the parameters more frequently and can avoid getting stuck in local minima.
+
+- Overall, SGD is a powerful optimization algorithm that can be effective for a wide range of machine learning problems. It is particularly well-suited for large datasets, high-dimensional data, non-convex optimization problems, and online learning. However, the hyperparameters of SGD must be carefully tuned to ensure that the algorithm converges to the optimal solution.
