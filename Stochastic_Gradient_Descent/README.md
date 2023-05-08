@@ -22,12 +22,29 @@ Components:
 
 ### Stochastic Gradient Descent Operations
 
-* Gradient computation: At each iteration, the gradient of the loss function with respect to the model parameters is computed. This involves computing the partial derivatives of the loss function with respect to each of the model parameters.
+* **Gradient computation**: At each iteration, the gradient of the loss function with respect to the model parameters is computed. This involves computing the partial derivatives of the loss function with respect to each of the model parameters.
 
-* Parameter update: Once the gradient has been computed, the model parameters are updated by taking a step in the direction of the negative gradient, scaled by the learning rate. This involves multiplying the gradient vector by the learning rate and subtracting the result from the current parameter values.
+* **Parameter update**: Once the gradient has been computed, the model parameters are updated by taking a step in the direction of the negative gradient, scaled by the learning rate. This involves multiplying the gradient vector by the learning rate and subtracting the result from the current parameter values.
 
-* Mini-batch sampling: In order to compute the gradient efficiently, SGD typically uses mini-batch sampling. This involves randomly selecting a subset of the training data at each iteration and using that subset to compute the gradient. This reduces the computational burden of computing the gradient on the entire dataset and can help SGD converge faster.
+* **Mini-batch sampling**: In order to compute the gradient efficiently, SGD typically uses mini-batch sampling. This involves randomly selecting a subset of the training data at each iteration and using that subset to compute the gradient. This reduces the computational burden of computing the gradient on the entire dataset and can help SGD converge faster.
 
-* Random initialization: SGD typically starts with random initial values for the model parameters. This ensures that the algorithm explores a variety of parameter settings and can escape from local minima.
+* **Random initialization**: SGD typically starts with random initial values for the model parameters. This ensures that the algorithm explores a variety of parameter settings and can escape from local minima.
 
-* Stopping criteria: SGD typically stops when a stopping criterion is met, such as when the algorithm has completed a fixed number of iterations or when the improvement in the loss function falls below a certain threshold.
+* **Stopping criteria**: SGD typically stops when a stopping criterion is met, such as when the algorithm has completed a fixed number of iterations or when the improvement in the loss function falls below a certain threshold.
+
+
+### Strengths of Stochastic Gradient Descent include:
+
+* **Efficiency**: SGD is computationally efficient because it updates the parameters of the model using only a subset of the training data at each iteration. This makes it well-suited for large datasets and complex models.
+
+* **Convergence speed**: SGD can converge faster than batch gradient descent because it updates the parameters more frequently, which can help the algorithm escape local minima and find the optimal solution more quickly.
+
+* **Robustness**: SGD is less sensitive to noisy data than batch gradient descent because it updates the parameters more frequently and can avoid getting stuck in local minima.
+
+### Weaknesses of Stochastic Gradient Descent include:
+
+* **Variance in updates**: Because SGD updates the parameters using only a subset of the training data, the updates can be more noisy and have higher variance than batch gradient descent. This can make the learning process more unstable and require more tuning of the hyperparameters.
+
+* **Learning rate tuning**: SGD requires careful tuning of the learning rate to ensure that the algorithm converges to the optimal solution. If the learning rate is too high, the algorithm can oscillate and fail to converge. If the learning rate is too low, the algorithm may converge too slowly.
+
+* **Initialization sensitivity**: SGD can be sensitive to the initial values of the parameters, which can affect the convergence speed and final performance of the algorithm.
