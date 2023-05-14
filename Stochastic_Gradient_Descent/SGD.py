@@ -17,7 +17,6 @@ def stochastic_gradient_descent(X, y, learning_rate=0.01, n_epochs=100, batch_si
       theta represents the coefficients (also known as weights or slopes)
     - losses: list of length (n_epochs), the training loss at each epoch
     """
-
     # Initialize model parameters and giving random initialization
     n_samples, n_features = np.shape(X)
     theta = np.zeros(n_features)
