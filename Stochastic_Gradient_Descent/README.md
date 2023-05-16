@@ -5,7 +5,6 @@ In this repository I will implement SGD using numpy
 
 Components:
 
-
     - X: numpy array of shape (n_samples, n_features), the feature matrix
     - y: numpy array of shape (n_samples,), the target vector
     - learning_rate: float, the learning rate of the algorithm
