@@ -22,6 +22,8 @@ Parameters:
 ### Stochastic Gradient Descent Operations
 
 * **Gradient computation**: At each iteration, the gradient of the loss function with respect to the model parameters is computed. This involves computing the partial derivatives of the loss function with respect to each of the model parameters.
+Gradient is important because it captures all the partial derivatives of a scalar-valued multivariable function
+In the case of scalar-valued multivariable functions, meaning those with a multidimensional input but a one-dimensional output, the answer is the gradient. The gradient of a function f f, denoted as nabla f ∇f, is the collection of all its partial derivatives into a vector.
 
 * **Parameter update**: Once the gradient has been computed, the model parameters are updated by taking a step in the direction of the negative gradient, scaled by the learning rate. This involves multiplying the gradient vector by the learning rate and subtracting the result from the current parameter values.
 
