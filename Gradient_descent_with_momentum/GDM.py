@@ -53,10 +53,10 @@ def Gradient_descent_with_momentum(
             theta = theta - eta * velocity_vector
             # Compute the mean squared error for the mini-batch
             y_pred = np.dot(X_batch, theta)
-            batch_loss = np.mean((y_pred - y) ** 2)
+            batch_loss = np.mean((y_pred - y_batch) ** 2)
             batch_losses.append(batch_loss)
-    # Compute the training loss for the epoch
-    epoch_loss = np.mean(batch_losses)
-    losses.append(epoch_loss)
+        # Compute the training loss for the epoch
+        epoch_loss = np.mean(batch_losses)
+        losses.append(epoch_loss)
 
     return theta, losses
