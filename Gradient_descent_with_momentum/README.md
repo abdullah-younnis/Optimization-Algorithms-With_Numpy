@@ -91,6 +91,9 @@ GDM is particularly effective for dealing with noisy gradient estimates, trainin
 
 ### Resources
 
+* **Gradient Descent with Momentum**:
 https://medium.com/optimization-algorithms-for-deep-neural-networks/gradient-descent-with-momentum-dce805cd8de8
 
+
+* **Accelerate Gradient Descent with Momentum Visually representation**:  
 https://www.youtube.com/watch?v=iudXf5n_3ro
