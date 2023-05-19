@@ -1,13 +1,13 @@
 import numpy as np
 
-def stochastic_gradient_descent(X, y, learning_rate=0.01, n_epochs=100, batch_size=32):
+def stochastic_gradient_descent(X, y, eta=0.01, n_epochs=100, batch_size=32):
     """
     Implementation of Stochastic Gradient Descent algorithm using numpy.
     Below are my explaination for compomnents of stochastic_gradient_descent
-    Arguments:
+    Parameterss:
     - X: numpy array of shape (n_samples, n_features), the feature matrix
     - y: numpy array of shape (n_samples,), the target vector
-    - learning_rate: float, the learning rate of the algorithm
+    - eta: float, the learning rate of the algorithm
     - n_epochs: int, the number of epochs (iterations over the entire dataset)
     - batch_size: int, the number of samples to use in each mini-batch and act as Stopping criteria
     
@@ -41,9 +41,9 @@ def stochastic_gradient_descent(X, y, learning_rate=0.01, n_epochs=100, batch_si
             y_pred = np.dot(X_batch,theta)
             error = (y_pred - y_batch)
             x_transposed = np.transpose(X_batch)
-            grad = np.dot(x_transposed, error) / batch_size
+            gradient = np.dot(x_transposed, error) / batch_size
             # Update the model parameters
-            theta -= learning_rate * grad
+            theta -= eta * gradient
         
         # Compute the training loss at this epoch
         y_pred = np.dot(X,theta)
