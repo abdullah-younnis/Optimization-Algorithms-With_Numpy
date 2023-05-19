@@ -88,3 +88,9 @@ Gradient Descent with Momentum (GDM) is a powerful optimization algorithm that c
 The momentum term in GDM helps to accelerate convergence, reduce oscillations, and improve generalization performance. 
 
 GDM is particularly effective for dealing with noisy gradient estimates, training on large datasets, and requires fewer hyperparameters to tune compared to other optimization algorithms. However, GDM may not be the best choice for shallow neural networks or low-dimensional data, and may require careful hyperparameter tuning. Overall, GDM represents a valuable addition to the machine learning practitioner's toolkit and can be used to improve the performance of many different types of machine learning models.
+
+### Resources
+
+https://medium.com/optimization-algorithms-for-deep-neural-networks/gradient-descent-with-momentum-dce805cd8de8
+
+https://www.youtube.com/watch?v=iudXf5n_3ro
