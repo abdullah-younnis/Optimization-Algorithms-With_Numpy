@@ -80,7 +80,6 @@ Gradient Descent with Momentum (GDM) has several strengths that make it a popula
 
 * **Limited memory**: GDM requires additional memory to store the velocity vector, which can be a concern for models with limited memory. In such cases, simpler optimization algorithms, such as GD or stochastic gradient descent (SGD), may be more appropriate.
 
-
 ### Conclusion
 
 Gradient Descent with Momentum (GDM) is a powerful optimization algorithm that can be used to train a wide range of machine learning models, especially deep neural networks with highly non-convex cost functions. 
